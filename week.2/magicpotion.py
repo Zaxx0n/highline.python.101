@@ -15,6 +15,8 @@
 import math
 
 # main
+
+# created some cauldron names and added some emoji for each
 cauldrons = [
     {"cauldronName": "Pixie Pan 🧚", "cleanName": "Pixie Pan", "size": .50},      
     {"cauldronName": "Goblin Goblet 🧌 ", "cleanName": "Goblin Goblet", "size": 1},  
@@ -65,3 +67,4 @@ print(f"- Crystal Water: {crystalWater:.2f} Liters")
 print(f"- Moon Dust: {moonDust} Grams")
 print(f"- Sunflower Petals: {sunflowerPetals} Petals")
 print(f"- Eye of Newt: {eyeofNewt} Eyeballs")
+print("\nRemember, witchlings, magic is not to be trifled with! Handle your cauldron carefully, or face the consequences! 😈✨")
