@@ -16,10 +16,10 @@ import math
 
 # main
 cauldrons = [
-    {"cauldronName": "Pixie Pan " + "🧚", "cleanName": "Pixie Pan", "size": .50},      
+    {"cauldronName": "Pixie Pan 🧚", "cleanName": "Pixie Pan", "size": .50},      
     {"cauldronName": "Goblin Goblet 🧌 ", "cleanName": "Goblin Goblet", "size": 1},  
     {"cauldronName": "Witchfire Basin 🔥", "cleanName": "Witchfire Basin", "size": 2.5},
-    {"cauldronName": "Elder Warlock Vat 🔮", "cleanName": "Elder Warlock Vat", "size": 5},  
+    {"cauldronName": "Warlock Tub 🔮", "cleanName": "Warlock Tub", "size": 5},  
     {"cauldronName": "Dragon Tea Kettle 🐉", "cleanName": "Dragon Tea Kettle", "size": 10}    
 ]
 
