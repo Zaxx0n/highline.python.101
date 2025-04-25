@@ -1,0 +1,38 @@
+#!/usr/bin/env python3
+# Assignment: Week 4 - Weather Recommender System
+# Author: Mubashir Bholat, Zachary Derrick                    
+# Date of latest revision:  4/24/2025   
+# Purpose:The user will input the current temperature and whether it's
+#         raining or not. Based on the input, your program
+#         will recommend appropriate clothing.
+# Resources: A03 - If/Else - Weather Recommender System
+#            
+# Notes: 
+
+# a function called weatherwear
+def weatherwear():
+    try:
+        temp = float(input("Enter the current temperature in Celsius: "))
+        while True:
+                    print("Is it raining?")
+                    print("1. Yes")
+                    print("2. No")
+                    raining = input("Enter 1 or 2: ")
+                    if raining in ["1", "2"]:
+                        break    
+                    else:
+                        print("That is not a valid option. Please try again by entering 1 or 2.")
+        if temp < 10:
+            print("Due to cold weather, I recommmend wearing a heavy jacket or sweater.")
+        elif 10 <= temp <= 25:
+            print("It's pleasant today. Try wearing a light jacket or t-shirt.")
+        else:
+            print("Today's weather is rather hot. Wear shorts and a t-shirt or something light and comfortable.")
+        if raining == "1":
+                        print("Carry an umbrella today and be sure to wear waterproof shoes.")
+                       
+    except ValueError:
+        print("Please enter a valid number for temperature.")         
+            
+# call the function 
+weatherwear()
