@@ -91,13 +91,13 @@ def main():
 
         # check if they want to make changes (this is the verbage I went with for "room conditions")
         while True:
-            update = input("\nWould you like to make any changes? (yes/no): ").strip().lower()
+            update = input("\nWould you like to update any of your choices? (yes/no):").strip().lower()
             if update in ['yes', 'no']:
                 break
             print("Please enter 'yes' or 'no'.")
 
         if update == 'no':
-            print("Exiting Eco House 3000. Beep Boop Bop..")
+            print("Exiting Eco House 3000. Beep Boop Bop.. 🤖📡🔊")
             break
 
 # runs the program
