@@ -4,7 +4,7 @@
 # Date of latest revision:  5/11/2025   
 # Purpose: To understand the working of functions in Python by creating 
 #          simple real-world temperature conversion utilities.
-# Resources: A05 - Functions Temperature Word Document 
+# Resources: A05 - Functions Temperature Word Document, Revised Menu from My Attacktools Script  
 # Notes: This is a menu that I've used in programs outside of this class.
 #        It's simple and I thought it fit in nicely for this assignment. 
 
