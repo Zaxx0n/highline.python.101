@@ -8,7 +8,8 @@
 #            
 # Notes: Because there is so much repetition in what the code is supposed to do, I decided to make a loop and a function.
 #        There is a version of this that I was working on that uses the os library and loads a log so that previous months
-#        could be imported or compared.  I eventually just simplified it to the scritp below.
+#        could be imported or compared.  I eventually just simplified it to the scritp below. I would have also liked to 
+#        create some way to handle error, like in the case of the user entered a string into the price prompt. 
 
 # libraries
 import math
@@ -36,7 +37,7 @@ for i in range(1, 4):
     item_totals.append((item_name, item_total))
     total_expenditure += item_total
 
-
+# prints all of the collected information using a for loop
 print("\nBreakdown of individual item totals:")
 for name, total in item_totals:
     print(f"{name}: ${total:.2f}")
