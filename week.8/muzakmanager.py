@@ -7,14 +7,14 @@
 #          and find out popular song choices
 # Resources: A07 - Music Playlist Word Document, OpenAI - helped in making the loading previous playlist function. 
 #            I also use OpenAI for quick emoji reference and suggestions.
-# Notes: While playing around and researching the count() method, I found the collection module, which
+# Notes: While playing around and researching the count() method, I found the collections module, which
 #        is used especially for counting elements like the string names for our song titles.  
 #        This program also saves a text file to the directory that the program is run from.  It also checks
 #        text files in the directory for a header to recognize it as a playlist, skipping unreadable files.
 #        A stretch goal for this would be to make a graphical interface, something I've only played around with.
-#        Also, I'd probably add an option to seach through the playlist for a song being added and let the
+#        Also, I'd probably add an option to search through the playlist for a song being added and let the
 #        user know if it already exists, but since part of the assignement is to count the most frequently added
-#        song(s), I decided to not add this.
+#        song(s), I decided not to add this.
 
 # modules
 import os
@@ -43,7 +43,7 @@ def main_menu():
         else:
             print("Invalid option. Please try again.")
 
-# function to create a new playlist: I added the if statement to remove .txt just incase someone typed itin the file name.
+# function to create a new playlist: I added the if statement to remove .txt just in case someone typed itin the file name.
 def create_new_playlist():   
     global playlist
     global playlist_name
