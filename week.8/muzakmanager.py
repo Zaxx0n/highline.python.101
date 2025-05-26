@@ -56,12 +56,13 @@ def create_new_playlist():
     print(f"New playlist '{playlist_name}' created.")
     playlist_menu()
 
+# this was created so that playlists can be reopened and edited
 def open_playlist():
     global playlist
     global playlist_name
 
     # this looks for the string '# SRMM9000' to make sure the file was created by this program and is a playlist
-    
+    # thus finding "valid_playlists"
     valid_playlists = []
     for f in os.listdir():
         if f.endswith('.txt'):
@@ -72,7 +73,7 @@ def open_playlist():
                         valid_playlists.append(f)
             except Exception:
                 continue  
-
+    #  prints the valid playlists for the user to choose from
     if valid_playlists:
         print("\nFound the following playlists:")
         for i, file in enumerate(valid_playlists, start=1):
@@ -83,6 +84,7 @@ def open_playlist():
         except (ValueError, IndexError):
             print("Invalid selection. Returning to main menu.")
             return
+    # allows for importing of a playlist from a different directory
     else:
         selected_file = input("No valid playlists found.\nEnter the full path to the playlist file you'd like to use: ")
 
@@ -100,11 +102,11 @@ def open_playlist():
         print("File not found. Returning to main menu.")
 
 
-
+# I wanted users to be able to save their playlists to use again
 def save_playlist():
     global playlist_name
 
-    # Safety check: make sure playlist_name is defined
+    # Safety Check: makes sure that playlist_name has been given
     if not playlist_name:
         print("Error: No playlist name defined. Cannot save.")
         return
@@ -119,6 +121,7 @@ def save_playlist():
     except Exception as e:
         print(f"An error occurred while saving: {e}")
 
+# the menu for editing playlists
 def playlist_menu():
     while True:
         playlist_option = input("""\nWhat would you like to do?:
@@ -156,6 +159,7 @@ def add_song():
     playlist.append(song)
     print(f"'{song}' added to playlist.")
 
+# this allows both the input of song name and a list to choose from for removal
 def remove_song():
     if not playlist:
         print("Playlist is empty. Nothing to remove.")
@@ -188,7 +192,7 @@ def remove_song():
 
 def view_playlist():
     if playlist:
-        print("\nYour Playlist:")
+        print(f"\nPlaylist: {playlist_name}")
         for count, song in enumerate(playlist, start=1):
             print(f"{count}. {song}")
     else:
